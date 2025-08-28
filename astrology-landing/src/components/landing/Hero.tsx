@@ -20,7 +20,7 @@ export default function Hero() {
   useEffect(() => {
     const fetchHeroData = async () => {
       try {
-        const response = await fetch('/hero.ts');
+        const response = await fetch('/hero.json');
         if (!response.ok) {
           throw new Error('Failed to fetch hero data');
         }
