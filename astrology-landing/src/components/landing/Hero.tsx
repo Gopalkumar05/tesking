@@ -1,7 +1,7 @@
 
 
 "use client";
-import Image from 'next/image'
+
 import { useState, useEffect } from 'react';
 import { Star, ThumbsUp, ShieldCheck } from 'lucide-react';
 import { HeroData, Badge } from '@/types';
