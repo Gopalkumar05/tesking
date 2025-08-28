@@ -89,7 +89,7 @@ export default function Testimonials() {
                   </h3>
                 </div>
                 <p className="text-gray-700 dark:text-gray-300">
-                  "{testimonial.feedback}"
+                 {`"${testimonial.feedback}"`}
                 </p>
               </div>
             </div>
