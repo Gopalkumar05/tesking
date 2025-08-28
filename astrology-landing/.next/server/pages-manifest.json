@@ -1,0 +1,4 @@
+{
+  "/api/hero": "pages/api/hero.js",
+  "/api/testimonials": "pages/api/testimonials.js"
+}

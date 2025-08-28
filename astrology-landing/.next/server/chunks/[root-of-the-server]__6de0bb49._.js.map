@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/roy63/Desktop/tesking/astrology-landing/src/pages/api/testimonials.ts"],"sourcesContent":["import { NextApiRequest, NextApiResponse } from 'next';\n\nexport interface Testimonial {\n  name: string;\n  feedback: string;\n  imageUrl: string;\n}\n\nexport default function handler(req: NextApiRequest, res: NextApiResponse<Testimonial[]>) {\n  const testimonials: Testimonial[] = [\n    {\n      name: \"Sophia Lee\",\n      feedback: \"The session was life-changing! I got so much clarity about my career path.\",\n      imageUrl: \"/images/client1.jpg\"\n    },\n    {\n      name: \"David Kim\",\n      feedback: \"Accurate predictions and very professional. Highly recommended.\",\n      imageUrl: \"/images/client2.jpg\"\n    },\n    {\n      name: \"Emma Watson\",\n      feedback: \"I feel more confident about my future now. Amazing experience!\",\n      imageUrl: \"/images/client3.jpg\"\n    }\n  ];\n\n  res.status(200).json(testimonials);\n}"],"names":[],"mappings":";;;;AAQe,SAAS,QAAQ,GAAmB,EAAE,GAAmC;IACtF,MAAM,eAA8B;QAClC;YACE,MAAM;YACN,UAAU;YACV,UAAU;QACZ;QACA;YACE,MAAM;YACN,UAAU;YACV,UAAU;QACZ;QACA;YACE,MAAM;YACN,UAAU;YACV,UAAU;QACZ;KACD;IAED,IAAI,MAAM,CAAC,KAAK,IAAI,CAAC;AACvB","debugId":null}}]
+}
