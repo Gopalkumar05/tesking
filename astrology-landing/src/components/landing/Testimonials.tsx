@@ -37,7 +37,7 @@
 //   useEffect(() => {
 //     const fetchTestimonials = async () => {
 //       try {
-//         const response = await fetch('/api/testimonials');
+//         const response = await fetch('https://tesking.onrender.com/api/testimonials');
 //         if (!response.ok) {
 //           throw new Error('Failed to fetch testimonials');
 //         }
