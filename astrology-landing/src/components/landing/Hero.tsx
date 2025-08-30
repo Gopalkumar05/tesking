@@ -85,11 +85,12 @@ export default function Hero() {
               <div className="w-64 h-64 md:w-80 md:h-80 bg-purple-200 dark:bg-purple-900 rounded-full flex items-center justify-center">
                 <div className="w-56 h-56 md:w-72 md:h-72 bg-purple-300 dark:bg-purple-800 rounded-full flex items-center justify-center">
                   <div className="w-48 h-48 md:w-60 md:h-60 bg-purple-400 dark:bg-purple-700 rounded-full flex items-center justify-center overflow-hidden">
-                    <Image
-                      src="https://imgcdn.stablediffusionweb.com/2024/3/5/b2e98c69-d4f4-4b6d-b672-c373b432c3e9.jpg || {`${heroDate.imageUrl}`}"
-                      alt="Astrologer"
-                      className="w-full h-full object-cover"
-                    />
+                   <Image
+  src={heroDate.imageUrl ? heroDate.imageUrl : "https://imgcdn.stablediffusionweb.com/2024/3/5/b2e98c69-d4f4-4b6d-b672-c373b432c3e9.jpg"}
+  alt="Astrologer"
+  className="w-full h-full object-cover"
+/>
+
                   </div>
                 </div>
               </div>
