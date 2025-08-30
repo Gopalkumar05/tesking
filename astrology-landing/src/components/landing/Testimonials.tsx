@@ -34,44 +34,27 @@ export default function Testimonials() {
     },
   });
 
-  // useEffect(() => {
-  //   const fetchTestimonials = async () => {
-  //     try {
-  //       const response = await fetch('https://tesking.onrender.com/api/testimonials');
-  //       if (!response.ok) {
-  //         throw new Error('Failed to fetch testimonials');
-  //       }
-  //       const data: Testimonial[] = await response.json();
-  //       setTestimonials(data);
-  //     } catch (err) {
-  //       setError(err instanceof Error ? err.message : 'An error occurred');
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchTestimonials();
-  // }, []);
-  
   useEffect(() => {
-  const fetchTestimonials = async () => {
-    try {
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || window.location.origin;
-      const response = await fetch(`${baseUrl}/api/testimonials`);
-      if (!response.ok) {
-        throw new Error('Failed to fetch testimonials');
+    const fetchTestimonials = async () => {
+      try {
+        const response = await fetch('/testimonials.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch testimonials');
+        }
+        const data: Testimonial[] = await response.json();
+        setTestimonials(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'An error occurred');
+      } finally {
+        setLoading(false);
       }
-      const data: Testimonial[] = await response.json();
-      setTestimonials(data);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'An error occurred');
-    } finally {
-      setLoading(false);
-    }
-  };
+    };
 
-  fetchTestimonials();
-}, []);
+    fetchTestimonials();
+  }, []);
+  
+
+
 
 
   if (loading) {
