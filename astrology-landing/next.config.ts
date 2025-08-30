@@ -1,15 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "imgcdn.stablediffusionweb.com",
-        pathname: "/**",
-      },
-    ],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       hostname: "imgcdn.stablediffusionweb.com",
+  //       pathname: "/**",
+  //     },
+  //   ],
+  // },
 };
 
 export default nextConfig;
