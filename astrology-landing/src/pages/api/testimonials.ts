@@ -29,8 +29,6 @@
 // }
 
 
-
-// pages/api/testimonials.ts
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export interface Testimonial {
@@ -39,10 +37,7 @@ export interface Testimonial {
   imageUrl: string;
 }
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Testimonial[]>
-) {
+export default function handler(req: NextApiRequest, res: NextApiResponse<Testimonial[]>) {
   const testimonials: Testimonial[] = [
     {
       name: "Sophia Lee",
@@ -63,3 +58,8 @@ export default function handler(
 
   res.status(200).json(testimonials);
 }
+
+
+
+
+// }
